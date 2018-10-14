@@ -1,0 +1,86 @@
+<!DOCTYPE html">
+<html lang="pt-br">
+<head>
+    <title>ISQUIK</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
+    
+    <script type="text/javascript" src="controller.js"></script>
+</head>
+
+<body>
+    <div class="all" >
+        <div class="title"><img src='./img/isquik-alt.svg'></div>
+        <h3 class="title">Teste Desenvolvimento Javascript</h3>
+        <div>  
+            <form id="frmCadastro">
+                <legend>Dados do Contato:</legend>
+                <div class='box'>
+                    <div><label for="txtNome">Nome</label></div>
+                    <input type="text" id="txtNome" placeholder="Nome Completo">
+                </div>
+                <div>
+                    <div><label for="dtpDataNascimento">Data de Nascimento</label></div>
+                    <input type="date" id="dtpDataNascimento" value="1990-08-29">
+                </div>
+                <legend>Endere&ccedil;o:</legend>
+                <div class='box'>
+                    <div><label for="txtNome">Rua</label></div>
+                    <input type="text" id="txtRua" placeholder="Rua">
+                </div>
+                <div>
+                    <div><label for="txtNumero">N&uacute;mero</label></div>
+                    <input type="text" id="txtNumero" placeholder="Numero">
+                </div>                       
+                <div>                    
+                    <div><label for="txtComplemento">Complemento</label></div>
+                    <input type="text" id="txtComplemento" placeholder="Complemento">
+                </div>
+                <div class="box">
+                    <div><label for="txtCEP">CEP</label></div>
+                    <input type="text" id="txtCep" placeholder="CEP">
+                </div>
+                <div>
+                    <div><label for="txtBairro">Bairro</label></div>
+                    <input type="text" id="txtBairro" placeholder="Bairro">
+                </div>
+                <div class="box">
+                    <div><label for="txtCidade">Cidade</label></div>
+                    <input type="text" id="txtCidade" placeholder="Cidade">
+                </div>
+                <div>
+                    <div><label for="txtUF">UF</label></div>
+                    <input type="text" id="txtUF" placeholder="UF">
+                </div>
+                <legend>Telefones:</legend>
+                <div class='box-item' id="novoTelefone"></div>
+                <div class='box-item' style='border:0'>
+                    <button onclick="return adicionarTelefone();">Adicionar novo telefone</button>
+                </div>
+                <input type="submit" name="" id="btnCadastrarSalvar" value="Salvar">
+            </form>
+        <table>
+            <caption><h3>Contatos</h3></caption>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>nome</th>
+                    <th>nascimento</th>
+                    <th>rua</th>
+                    <th>numero</th>
+                    <th>complemento</th>
+                    <th>cep</th>
+                    <th>bairro</th>
+                    <th>cidade</th>
+                    <th>uf</th>
+                    <th>telefones</th>
+                    <th colspan="2">Opções</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyResultados"></tbody>
+            <tfoot></tfoot>
+        </table>
+        </div>
+    </div>
+</body>
+</html>
